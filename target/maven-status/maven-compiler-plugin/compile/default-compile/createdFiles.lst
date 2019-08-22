@@ -1,4 +1,0 @@
-com\baizhi\controller\UserController.class
-com\baizhi\security\MyAuthenticationSuccessHandler.class
-com\baizhi\security\MyUserDetailService.class
-com\baizhi\security\MyAuthenticationFailureHandler.class
