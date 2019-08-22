@@ -14,9 +14,10 @@ public class MyUserDetailService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         // UserDetails : 封装用户数据的接口
-
-        User user = new User("admin","admin", AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_ADMIN"));
-
+        User user = null;
+        if(s.equals("admin")){
+            user = new User("admin","admin", AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_ADMIN"));
+        }
         return user;
     }
 }
